@@ -79,7 +79,7 @@ $(document).ready(function () {
 });
 
 // document.getElementById('submit')?.addEventListener('click', function(){
-
+ 
 document.addEventListener("DOMContentLoaded", function (event) {
   event.preventDefault();
   const career = document.getElementById("career");
@@ -123,14 +123,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
       // file_name: file.name, // The name of the file
       // file_content: basePDF, // Base64 encoded content of the file
       // file_type: file.type,
-      to_email: "chandanchaudhary3949@gmail.com",
+      // to_email: "chandanchaudhary3949@gmail.com",
     };
     // console.log(templateParams, "template");
 
-    // VITE_EMAIL_SERVICE_ID = service_fj6btw7;
-    // VITE_EMAIL_TEMPLATE_ID = template_dqg4cof;
-    // VITE_EMAIL_PUBLIC_KEY = jV9SsDvNN9x76wkI2;
-    emailjs.send("service_fj6btw7", "template_dqg4cof", templateParams).then(
+    // VITE_EMAIL_SERVICE_ID = service_w1kekzn; //nibs bridge
+    // VITE_EMAIL_TEMPLATE_ID = template_upovb1h;
+    // VITE_EMAIL_PUBLIC_KEY = iBnfmDuuJ-U9qy-AA;
+    emailjs.send("service_w1kekzn", "template_upovb1h", templateParams).then(
       function (response) {
         // console.log("SUCCESS!", response.status, response.text);
         alert("Email sent successfully!");
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       function (error) {
         // console.log("FAILED...", error);
         alert("Failed to send email. Please try again later.");
-        window.location.reload();
+        // window.location.reload();
       }
     );
   });
@@ -179,14 +179,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
       from_email: email,
       from_phone: phone,
       message: JSON.stringify(contactData),
-      to_email: "chandanchaudhary3949@gmail.com",
+      // to_email: "chandanchaudhary3949@gmail.com",
     };
     // console.log(templateParams, "template");
 
-    // VITE_EMAIL_SERVICE_ID=service_fj6btw7
-    // VITE_EMAIL_TEMPLATE_ID=template_dqg4cof
-    // VITE_EMAIL_PUBLIC_KEY=jV9SsDvNN9x76wkI2
-    emailjs.send("service_fj6btw7", "template_dqg4cof", templateParams).then(
+    // VITE_EMAIL_SERVICE_ID = service_w1kekzn; //nibs bridge
+    // VITE_EMAIL_TEMPLATE_ID = template_upovb1h;
+    // VITE_EMAIL_PUBLIC_KEY = iBnfmDuuJ-U9qy-AA;
+ 
+    emailjs.send("service_w1kekzn", "template_upovb1h", templateParams).then(
       function (response) {
         // console.log("SUCCESS!", response.status, response.text);
         alert("Email sent successfully!");
@@ -195,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       function (error) {
         // console.log("FAILED...", error);
         alert("Failed to send email. Please try again later.");
-        window.location.reload();
+        // window.location.reload();
       }
     );
     // console.log(contactData, "form contact");
