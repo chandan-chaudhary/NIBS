@@ -632,15 +632,21 @@ body{
 
 .team .row .card{
     height: 40rem;
-    width: 25rem;
+    width: 30rem;
     background-color: #fff;
     text-align: center;
     margin: 5rem 5rem;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
     -webkit-box-reflect: below 5px linear-gradient(transparent 70%, #0004);
     transition: 0.5s;
 }
+.card::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers */
+  }
 
 .team .row .card:hover{
     transform: translateY(-10px);
@@ -662,9 +668,14 @@ body{
     object-fit: cover;
 }
 
-.team .row .card .info h3{
+.team .row .card .info h3 {
     font-size: 2rem;
     color: #333;
+}
+.team .row .card .info p {
+    font-size: 12px;
+    color: #333;
+    padding: 2px;
 }
 
 .team .row .card .info span{
