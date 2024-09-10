@@ -1,6 +1,6 @@
 
-require('../css/style.css'); // Path relative to your src directory
-require('../css/careers.css'); // Path relative to your src directory
+// require('../css/style.css'); // Path relative to your src directory
+// require('../css/careers.css'); // Path relative to your src directory
 
 // require('./css.careers.css'); // Path relative to your src directory
 // const file = require('../css/')
@@ -50,7 +50,7 @@ $(document).ready(function () {
       autoplay: true,
       dots: true,
       loop: true,
-      responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 } },
+      responsive: { 0: { items: 2 }, 768: { items: 3 }, 900: { items: 3 } },
     });
 
     $(".testimonials-carousel").owlCarousel({
